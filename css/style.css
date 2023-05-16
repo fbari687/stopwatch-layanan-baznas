@@ -1,0 +1,167 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.logoPage {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  position: relative;
+  background-color: #ffcc0a;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.loginPage {
+  width: 60%;
+  height: 100%;
+  background-color: #259047;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px;
+}
+
+.formInput {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.formInput label {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.loginForm {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: stretch;
+}
+
+.inputLogin {
+  background-color: #f5f5f5;
+  box-shadow: inset 1.5px 1.5px 4px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.rememberMeSect {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-right: 75.5px;
+  padding-left: 75.5px;
+  padding-bottom: 20px;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rememberMeLabel {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.rememberMeCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox .checkmark {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #f5f5f5;
+  box-shadow: inset 1.5px 1.5px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the checkmark */
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Show the checkmark when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  display: block;
+}
+
+.loginBtn {
+  outline: none;
+  border: none;
+  background-color: #259047;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px 50px;
+  color: #ffffff;
+  border-radius: 50px;
+  transform: all 0.4s;
+}
+
+.loginBtn:hover {
+  background-color: #238041;
+}
+
+.logoPage {
+  height: 100vh;
+}
