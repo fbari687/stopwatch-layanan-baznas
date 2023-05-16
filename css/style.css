@@ -8,11 +8,21 @@
   font-family: "Inter", sans-serif;
 }
 
-.container {
+.container-row {
   display: flex;
   width: 100vw;
   height: 100vh;
   flex-direction: row;
+}
+
+.container-col {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
 }
 
 .logoPage {
@@ -158,10 +168,29 @@
   transform: all 0.4s;
 }
 
-.loginBtn:hover {
+.startBtn {
+  outline: none;
+  border: none;
+  background-color: #52c41a;
+  width: 205px;
+  height: 102.5px;
+  cursor: pointer;
+  padding: 10px 50px;
+  color: #ffffff;
+  border-radius: 50px;
+  transform: all 0.4s;
+}
+
+.loginBtn:hover,
+.startBtn:hover {
   background-color: #238041;
 }
 
 .logoPage {
   height: 100vh;
+}
+
+.indexFontSize {
+  font-size: 38px;
+  font-weight: 700;
 }
