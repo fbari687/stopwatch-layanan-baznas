@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatchLayanan</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-row">
+      <div class="formPage">
+        <form action="" method="">
+          <div class="npwzBox">
+            <label for="npwz">NPWZ</label>
+            <input type="text" name="npwz" id="npwz" class="npwzText" />
+          </div>
+          <div class="layananBox">
+            <label class="kotak" for="konsultasi">
+              Konsultasi
+              <input type="checkbox" name="konsultasi" id="konsultasi" value="konsultasi" class="hide" />
+            </label>
+            <label class="kotak" for="pembayaran">
+              Pembayaran
+              <input type="checkbox" name="pembayaran" id="pembayaran" value="pembayaran" class="hide" />
+            </label>
+            <label class="kotak">
+              Lainnya
+              <input type="checkbox" name="lainnya" id="lainnya" value="lainnya" class="hide" />
+            </label>
+          </div>
+          <div class="deskripsiFrame">
+            <label for="deskripsi">Deskripsi (Opsional)</label>
+            <textarea name="deskripsi" id="deskripsi" class="deskripsiText"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="submitPage">
+        <button type="submit" class="submitPageBtn stop">Stop</button>
+        <button type="submit" class="submitPageBtn selesai">Selesai</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
