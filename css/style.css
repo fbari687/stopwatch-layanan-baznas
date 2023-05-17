@@ -13,6 +13,7 @@
   width: 100vw;
   height: 100vh;
   flex-direction: row;
+  position: relative;
 }
 
 .container-col {
@@ -335,4 +336,72 @@ input[type="checkbox"].hide {
 
 .selesai:hover {
   background-color: #ee4749;
+}
+
+.close {
+  display: none;
+}
+
+.modalSelesai {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.modalContent {
+  border-radius: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #ffffff;
+  width: 720px;
+  height: 400px;
+}
+
+.modalContent2 {
+  border-radius: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #ffffff;
+  width: 720px;
+  height: auto;
+}
+
+.modalContent p {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.modalContent2 p {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.btnList {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.iyaBtn {
+  background-color: #52c41a;
+}
+
+.belumBtn {
+  background-color: #ff4d4f;
 }
