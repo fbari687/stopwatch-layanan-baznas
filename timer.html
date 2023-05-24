@@ -8,62 +8,64 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container-row">
-      <div class="formPage">
-        <form action="" method="">
-          <div class="npwzBox">
-            <label for="npwz">NPWZ</label>
-            <input type="text" name="npwz" id="npwz" class="npwzText" />
-          </div>
-          <div class="layananBox">
-            <label class="kotak" for="konsultasi">
-              Konsultasi
-              <input type="checkbox" name="konsultasi" id="konsultasi" value="konsultasi" class="hide" />
-            </label>
-            <label class="kotak" for="pembayaran">
-              Pembayaran
-              <input type="checkbox" name="pembayaran" id="pembayaran" value="pembayaran" class="hide" />
-            </label>
-            <label class="kotak">
-              Lainnya
-              <input type="checkbox" name="lainnya" id="lainnya" value="lainnya" class="hide" />
-            </label>
-          </div>
-          <div class="deskripsiFrame">
-            <label for="deskripsi">Deskripsi (Opsional)</label>
-            <textarea name="deskripsi" id="deskripsi" class="deskripsiText"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="submitPage">
-        <button type="submit" class="submitPageBtn stop">Stop</button>
-        <button type="submit" id="selesai" class="submitPageBtn selesai">Selesai</button>
-      </div>
-      <div id="modalSelesai" class="modalSelesai" style="display: none">
-        <div class="modalContent" style="display: none">
-          <p>
-            Anda yakin untuk <br />
-            menyelesaikan?
-          </p>
-          <div class="btnList">
-            <button class="submitPageBtn belumBtn">Belum</button>
-            <button class="submitPageBtn iyaBtn">Ya</button>
+    <form action="timer.html" method="post">
+      <div class="container-row">
+        <div class="formPage">
+          <div>
+            <div class="npwzBox">
+              <label for="npwz">NPWZ</label>
+              <input type="text" name="npwz" id="npwz" class="npwzText" />
+            </div>
+            <div class="layananBox">
+              <label class="kotak" for="konsultasi">
+                Konsultasi
+                <input type="checkbox" name="konsultasi" id="konsultasi" value="konsultasi" class="hide" />
+              </label>
+              <label class="kotak" for="pembayaran">
+                Pembayaran
+                <input type="checkbox" name="pembayaran" id="pembayaran" value="pembayaran" class="hide" />
+              </label>
+              <label class="kotak">
+                Lainnya
+                <input type="checkbox" name="lainnya" id="lainnya" value="lainnya" class="hide" />
+              </label>
+            </div>
+            <div class="deskripsiFrame">
+              <label for="deskripsi">Deskripsi (Opsional)</label>
+              <textarea name="deskripsi" id="deskripsi" class="deskripsiText"></textarea>
+            </div>
           </div>
         </div>
-        <div class="modalContent2" style="display: none">
-          <p>
-            Tambahkan Catatan <br />
-            (Opsional)
-          </p>
-          <textarea name="catatan" id="catatan" class="deskripsiText"></textarea>
-          <div class="btnList">
-            <a href="index.html">
-              <button class="submitPageBtn loginBtn">Ya</button>
-            </a>
+        <div class="submitPage">
+          <button type="submit" class="submitPageBtn stop">Stop</button>
+          <button type="submit" id="selesai" class="submitPageBtn selesai">Selesai</button>
+        </div>
+        <div id="modalSelesai" class="modalSelesai" style="display: none">
+          <div class="modalContent" style="display: none">
+            <p>
+              Anda yakin untuk <br />
+              menyelesaikan?
+            </p>
+            <div class="btnList">
+              <button class="submitPageBtn belumBtn">Belum</button>
+              <button class="submitPageBtn iyaBtn">Ya</button>
+            </div>
+          </div>
+          <div class="modalContent2" style="display: none">
+            <p>
+              Tambahkan Catatan <br />
+              (Opsional)
+            </p>
+            <textarea name="catatan" id="catatan" class="deskripsiText"></textarea>
+            <div class="btnList">
+              <a href="index.html">
+                <button class="submitPageBtn loginBtn">Ya</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
     <script src="js/script.js"></script>
   </body>
 </html>
